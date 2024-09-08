@@ -1,0 +1,28 @@
+.SmallNav {
+  z-index: 100;
+
+  .SmallNav__Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+
+    .SmallNav__link {
+      color: var(--main-text-color);
+      padding: 10px 20px;
+      font-size: 22px;
+    }
+
+    .SmallNav__close {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}

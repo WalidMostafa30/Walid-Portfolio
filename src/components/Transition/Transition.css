@@ -1,0 +1,23 @@
+.slide-motion {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  height: 100vh;
+
+  &.one {
+    background-color: #13182e;
+    z-index: 10002;
+  }
+
+  &.two {
+    background-color: #152240;
+    z-index: 10001;
+  }
+
+  &.three {
+    background-color: #19325a;
+    z-index: 10000;
+  }
+}

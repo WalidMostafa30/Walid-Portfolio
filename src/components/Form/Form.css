@@ -1,0 +1,19 @@
+.Contact__form-input {
+  label {
+    color: white;
+  }
+
+  textarea {
+    min-height: 150px;
+    max-height: 320px;
+  }
+
+  input,
+  textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+  }
+}

@@ -1,0 +1,18 @@
+.Skills {
+  .Skills__container {
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .Skills__skill {
+    min-width: calc(100% / 5);
+    background-color: var(--main-bg-color);
+    padding: 20px 10px;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 5px;
+  }
+}

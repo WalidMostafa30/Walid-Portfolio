@@ -1,0 +1,54 @@
+.NavBar {
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .NavBar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .NavBar__links {
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .NavBar__link {
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-inline: 2px solid transparent;
+
+    &:hover,
+    &.active {
+      border-inline: inherit;
+      background-color: var(--bg-blur);
+    }
+
+    &:last-of-type {
+      border: none;
+      border-inline-start: 2px solid transparent;
+      
+      &:hover,
+      &.active {
+        border-inline-start: inherit;
+      }
+    }
+
+    &:first-of-type {
+      border: none;
+      border-inline-end: 2px solid transparent;
+      
+      &:hover,
+      &.active {
+        border-inline-end: inherit;
+      }
+    }
+  }
+}
