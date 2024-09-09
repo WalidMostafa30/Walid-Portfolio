@@ -1,41 +1,41 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import "./Home.css";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = () => {
   const nameText = "Walid Mostafa";
 
   const homeInfoV = {
     hidden: {
-      y: 50,
+      x: -50,
       opacity: 0,
     },
     visible: {
-      y: 0,
+      x: 0,
       opacity: 1,
-      transition: { delay: 0.9, duration: 1 },
+      transition: { duration: 1 },
     },
   };
 
   const homeImgV = {
     hidden: {
-      y: -50,
+      x: 50,
       opacity: 0,
     },
     visible: {
-      y: 0,
+      x: 0,
       opacity: 1,
-      transition: { delay: 0.9, duration: 1 },
+      transition: { duration: 1 },
     },
   };
 
   const nameV = {
     hidden: {},
     visible: {
-      transition: { staggerChildren: 0.1, delayChildren: 1.4 },
+      transition: { staggerChildren: 0.1, delayChildren: 0.6 },
     },
   };
 
@@ -49,19 +49,21 @@ const Home = () => {
       y: 0,
       x: 0,
       opacity: 1,
-      transition: { duration: 0.3, type: "spring", stiffness: 100 },
+      transition: { duration: 0.4, type: "spring", stiffness: 100 },
     },
   };
 
   const handV = {
     hidden: {
+      rotate: "45deg",
       x: 100,
       opacity: 0,
     },
     visible: {
+      rotate: "0deg",
       x: 0,
       opacity: 1,
-      transition: { delay: 2.8, duration: 0.2, type: "spring", stiffness: 100 },
+      transition: { delay: 2, duration: 0.2, type: "spring", stiffness: 100 },
     },
   };
 
@@ -73,7 +75,7 @@ const Home = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { delay: 2.8, duration: 0.2, type: "spring", stiffness: 100 },
+      transition: { delay: 2, duration: 0.2, type: "spring", stiffness: 100 },
     },
   };
 
@@ -83,7 +85,7 @@ const Home = () => {
         variants={homeInfoV}
         initial="hidden"
         animate="visible"
-        className="Home__info d-flex flex-column align-items-center gap-2"
+        className="Home__info d-flex flex-column align-items-center gap-1 gap-md-2"
       >
         <p className="fs-4">{`Hello I'm`}</p>
 
@@ -96,7 +98,7 @@ const Home = () => {
           >
             {nameText.split("").map((name, index) => (
               <motion.span
-                className={name === "M" ? "ms-3" : ""}
+                className={name === "M" ? "ms-2" : ""}
                 variants={childNameV}
                 key={index}
               >

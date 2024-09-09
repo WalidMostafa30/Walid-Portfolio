@@ -9,7 +9,7 @@ const Contact = () => {
   const contactsV = {
     hidden: {},
     visible: {
-      transition: { staggerChildren: 0.2, delayChildren: 0.9 },
+      transition: { staggerChildren: 0.2, delayChildren: 0.5 },
     },
   };
 

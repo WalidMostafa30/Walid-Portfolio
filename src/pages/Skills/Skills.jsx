@@ -10,10 +10,10 @@ const Skills = () => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 1,
+        delay: 0.4,
         duration: 1,
         staggerChildren: 0.15,
-        delayChildren: 0.9,
+        delayChildren: 0.5,
       },
     },
   };

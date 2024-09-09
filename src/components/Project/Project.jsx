@@ -1,14 +1,15 @@
 /* eslint-disable react/prop-types */
 import "./Project.css";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Project = ({ pro }) => {
   return (
     <div className="Project main-bg rounded-3">
-      <div className="Project__img rounded-2 overflow-hidden">
-        <img src={pro.img} alt={pro.title} />
-      </div>
+      <div
+        className="Project__img rounded-2 overflow-hidden"
+        style={{ backgroundImage: `url(${pro.img})` }}
+      />
 
       <div className="Project__details p-2">
         <h3 className="Project__title">{pro.title}</h3>

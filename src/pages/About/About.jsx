@@ -1,11 +1,11 @@
 import GlobalTitle from "../../components/GlobalTitle/GlobalTitle";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import CV from "../../assets/CV/Walid-CV.pdf";
 import labtop from "../../assets/Images/labtop.webp";
 import hand from "../../assets/Images/HandCoding.webp";
 import { aboutInfo } from "../../assets/data/Data";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import "./About.css";
 
 const About = () => {
@@ -17,26 +17,38 @@ const About = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { delay: 0.9, duration: 1 },
+      transition: { delay: 0.5, duration: 1 },
     },
   };
 
   const tBodt = {
     hidden: {},
     visible: {
-      transition: { staggerChildren: 0.1, delayChildren: 0.9 },
+      transition: { staggerChildren: 0.1, delayChildren: 0.5 },
     },
   };
 
   const trV = {
     hidden: {
-      x: 100,
+      x: 50,
       opacity: 0,
     },
     visible: {
       x: 0,
       opacity: 1,
       transition: { duration: 1, type: "spring", stiffness: 100 },
+    },
+  };
+
+  const btnV = {
+    hidden: {
+      x: 50,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { delay: 1, duration: 1, type: "spring", stiffness: 100 },
     },
   };
 
@@ -51,8 +63,8 @@ const About = () => {
           animate="visible"
           className="About__img d-none d-xl-block position-relative col-5"
         >
-          <img src={labtop} alt="img" className="labtop w-100" />
-          <img src={hand} alt="img" className="hand" />
+          <img loading="lazy" src={labtop} alt="img" className="labtop w-100" />
+          <img loading="lazy" src={hand} alt="img" className="hand" />
         </motion.div>
 
         <div className="About__info col-12 col-xl-6 d-flex flex-column">
@@ -76,9 +88,16 @@ const About = () => {
             </motion.tbody>
           </table>
 
-          <a download="" href={CV} className="main-btn mt-3">
-            Downloud CV <FontAwesomeIcon icon={faFileInvoice} />
-          </a>
+          <motion.div
+            variants={btnV}
+            initial="hidden"
+            animate="visible"
+            className="d-flex"
+          >
+            <a download="" href={CV} className="main-btn mt-2">
+              Downloud CV <FontAwesomeIcon icon={faFileInvoice} />
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

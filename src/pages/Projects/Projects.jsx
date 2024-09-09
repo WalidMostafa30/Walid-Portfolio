@@ -8,21 +8,19 @@ const Projects = () => {
   const projectsV = {
     hidden: {},
     visible: {
-      transition: { staggerChildren: 0.2, delayChildren: 0.9 },
+      transition: { staggerChildren: 0.2, delayChildren: 0.5 },
     },
   };
 
   const childProjectsV = {
     hidden: {
-      y: -50,
-      x: -50,
+      y: 50,
       opacity: 0,
     },
     visible: {
       y: 0,
-      x: 0,
       opacity: 1,
-      transition: { duration: 1, type: "spring", stiffness: 100 },
+      transition: { duration: 1.2, type: "spring", stiffness: 100 },
     },
   };
 

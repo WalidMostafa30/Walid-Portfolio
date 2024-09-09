@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import "./DarkMode.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 const DarkMode = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -16,13 +16,13 @@ const DarkMode = () => {
     localStorage.setItem("PortfolioDarkMode", JSON.stringify(darkMode));
 
     darkMode
-      ? document.body.classList.add("dark")
-      : document.body.classList.remove("dark");
+      ? document.body.classList.add("light")
+      : document.body.classList.remove("light");
   }, [darkMode]);
 
   return (
     <div className="Nav-icon" onClick={handleDark}>
-      <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
+      <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
     </div>
   );
 };

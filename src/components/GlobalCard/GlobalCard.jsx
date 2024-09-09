@@ -6,7 +6,7 @@ const GlobalCard = ({ icon, head, info, info2 }) => {
   return (
     <div className="GlobalCard main-bg">
       <FontAwesomeIcon icon={icon} />
-      <h3>{head}</h3>
+      <h2>{head}</h2>
       <p>{info}</p>
       <p>{info2}</p>
     </div>

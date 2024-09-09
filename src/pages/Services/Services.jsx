@@ -18,7 +18,7 @@ const Services = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { delay: 0.9, duration: 1 },
+      transition: { delay: 0.5, duration: 1 },
     },
   };
 

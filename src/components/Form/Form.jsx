@@ -1,8 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import "./Form.css";
 
 const Form = () => {
@@ -42,7 +42,7 @@ const Form = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { delay: 0.9, duration: 1 },
+      transition: { delay: 0.5, duration: 1 },
     },
   };
 
