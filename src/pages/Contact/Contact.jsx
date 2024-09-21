@@ -43,24 +43,13 @@ const Contact = () => {
                 key={index}
                 className="Contact__Card"
               >
-                {contact.head === "LinkedIn" ? (
-                  <a
-                    href="https://www.linkedin.com/in/walid-m0stafa-"
-                    target="_blank"
-                  >
-                    <GlobalCard
-                      head={contact.head}
-                      icon={contact.icon}
-                      info={contact.info}
-                    />
-                  </a>
-                ) : (
+                <a href={contact.link} target="_blank">
                   <GlobalCard
                     head={contact.head}
                     icon={contact.icon}
                     info={contact.info}
                   />
-                )}
+                </a>
               </motion.div>
             );
           })}

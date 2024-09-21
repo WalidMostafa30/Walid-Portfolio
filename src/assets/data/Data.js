@@ -94,17 +94,20 @@ export const contactInfo = [
   {
     head: "E-mail",
     icon: faEnvelope,
-    info: "walidmoustafa436@gmail.comfaEnvelope",
+    info: "walidmoustafa436@gmail.com",
+    link: "walidmoustafa436@gmail.com",
   },
   {
     head: "Whatsapp",
     icon: faWhatsapp,
     info: "0106 525 4159",
+    link: "https://wa.me/201065254159",
   },
   {
     head: "LinkedIn",
     icon: faLinkedin,
     info: "Walid Mostafa",
+    link: "https://www.linkedin.com/in/walid-m0stafa-",
   },
 ];
 
