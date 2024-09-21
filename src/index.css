@@ -82,6 +82,7 @@ i {
 section {
   padding: 80px 0;
   height: 100dvh;
+  overflow-y: auto;
 
   @media (max-width: 768px) {
     padding: 50px 0;

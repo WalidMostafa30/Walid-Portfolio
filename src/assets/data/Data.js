@@ -1,6 +1,8 @@
+import myPortfolioImg from "../Images/walid-portfolio.webp";
 import MiniStoreImg from "../Images/mini-store.webp";
 import GuessGameImg from "../Images/guess-game.webp";
 import QuranImg from "../Images/quran-app.webp";
+import todoListimg from "../Images/todo-list-ts.webp";
 import weatherimg from "../Images/weather-app.webp";
 import quizimg from "../Images/quiz-app.webp";
 import DragTodoImg from "../Images/to-do.webp";
@@ -79,12 +81,12 @@ export const services = [
   {
     head: "Retouch",
     icon: faWandMagicSparkles,
-    info: "I can help you by redesign your current webiste to looks much better",
+    info: "I can help you by redesign your current website to looks much better",
   },
   {
     head: "Support",
     icon: faHeadset,
-    info: "Support is avaiable if you wanna make any changes for your website after dilvering it",
+    info: "Support is available if you wanna make any changes for your website after delivering it",
   },
 ];
 
@@ -126,6 +128,12 @@ export const skillsData = [
 
 export const ProjectsData = [
   {
+    title: "My Portfolio",
+    img: myPortfolioImg,
+    github: "https://github.com/WalidMostafa30/Walid-Portfolio",
+    demo: "https://walid-portfolio-2001.netlify.app/",
+  },
+  {
     title: "Mini Store",
     img: MiniStoreImg,
     github: "https://github.com/WalidMostafa30/Mini-store",
@@ -136,6 +144,12 @@ export const ProjectsData = [
     img: QuranImg,
     github: "https://github.com/WalidMostafa30/Quran-App",
     demo: "https://quran-app2001.netlify.app/",
+  },
+  {
+    title: "Todo List",
+    img: todoListimg,
+    github: "https://github.com/WalidMostafa30/Todo-list-TS-",
+    demo: "https://todo-list-ts2001.netlify.app/",
   },
   {
     title: "Weather App",
