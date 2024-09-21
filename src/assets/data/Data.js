@@ -95,7 +95,7 @@ export const contactInfo = [
     head: "E-mail",
     icon: faEnvelope,
     info: "walidmoustafa436@gmail.com",
-    link: "walidmoustafa436@gmail.com",
+    link: "https://walidmoustafa436@gmail.com",
   },
   {
     head: "Whatsapp",
