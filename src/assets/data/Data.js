@@ -1,14 +1,13 @@
-import myPortfolioImg from "../Images/walid-portfolio.webp";
-import MiniStoreImg from "../Images/mini-store.webp";
-import GuessGameImg from "../Images/guess-game.webp";
-import QuranImg from "../Images/quran-app.webp";
-import todoListimg from "../Images/todo-list-ts.webp";
-import weatherimg from "../Images/weather-app.webp";
-import quizimg from "../Images/quiz-app.webp";
-import DragTodoImg from "../Images/to-do.webp";
-import ProfileImg from "../Images/profile.webp";
-import ageCalculatorImg from "../Images/age-calculator.webp";
-import ticTacToeImg from "../Images/tic-tac-toe.webp";
+import myPortfolioImg from "../Images/projectsImgs/portfolio.webp";
+import MiniStoreImg from "../Images/projectsImgs/ecom.webp";
+import GuessGameImg from "../Images/projectsImgs/guess-game.webp";
+import QuranImg from "../Images/projectsImgs/quran-app.webp";
+import todoListimg from "../Images/projectsImgs/todo-list-pages.webp";
+import weatherimg from "../Images/projectsImgs/weather-app.webp";
+import quizimg from "../Images/projectsImgs/quiz-app.webp";
+import DragTodoImg from "../Images/projectsImgs/drag-drop-todo.webp";
+import ageCalculatorImg from "../Images/projectsImgs/age-calculator.webp";
+import ticTacToeImg from "../Images/projectsImgs/tic-tac-toe.webp";
 import {
   faDesktop,
   faHeadset,
@@ -36,7 +35,7 @@ export const navLinks = [
 export const aboutInfo = [
   {
     title: "Name",
-    info: "Walid Mostafa Elsayed Abdelrahman",
+    info: "Walid Mostafa Elshazly",
   },
   {
     title: "Age",
@@ -53,7 +52,7 @@ export const aboutInfo = [
   },
   {
     title: "Summary",
-    info: "Experienced front-end developer with a strong focus on building dynamic and responsive web applications using React. Proficient in utilizing modern JavaScript (ES6+), TypeScript, and Redux Toolkit for state management, ensuring scalable and maintainable code. Expertise in creating reusable components, optimizing performance, and implementing best practices in clean code. Skilled in integrating RESTful APIs, handling asynchronous data fetching with createAsyncThunk, and managing authentication flows. Committed to delivering user-friendly interfaces with a keen eye for detail and UX/UI design principles.",
+    info: "Experienced Frontend Developer specializing in building dynamic and responsive web applications with React and Next.js. Proficient in modern JavaScript (ES6+), TypeScript, and Redux Toolkit, ensuring scalable and maintainable solutions. Skilled in creating reusable components, optimizing performance, integrating RESTful APIs, and managing authentication flows. Dedicated to delivering user-friendly interfaces with a strong focus on UX/UI design principles and clean code practices.",
   },
 ];
 
@@ -139,14 +138,14 @@ export const ProjectsData = [
   {
     title: "Mini Store",
     img: MiniStoreImg,
-    github: "https://github.com/WalidMostafa30/Mini-store",
-    demo: "https://mini-store1122.netlify.app/",
+    github: "https://github.com/WalidMostafa30/E-commerce-jsonserver",
+    demo: "https://ecommerce-ministore.netlify.app/",
   },
   {
     title: "Quran App",
     img: QuranImg,
     github: "https://github.com/WalidMostafa30/Quran-App",
-    demo: "https://quran-app2001.netlify.app/",
+    demo: "https://al-mostafa-app.vercel.app/",
   },
   {
     title: "Todo List",
@@ -163,8 +162,8 @@ export const ProjectsData = [
   {
     title: "Draggable To-DO",
     img: DragTodoImg,
-    github: "https://github.com/WalidMostafa30/ToDo-DD",
-    demo: "https://dd-todo-list10.netlify.app/",
+    github: "https://github.com/WalidMostafa30/Drag_Drop_Todo",
+    demo: "https://drag-drop-todo-2001.netlify.app/",
   },
   {
     title: "Quiz App",
@@ -189,11 +188,5 @@ export const ProjectsData = [
     img: ageCalculatorImg,
     github: "https://github.com/WalidMostafa30/Age-calculation",
     demo: "https://walidmostafa30.github.io/Age-calculation/",
-  },
-  {
-    title: "Profile",
-    img: ProfileImg,
-    github: "https://github.com/WalidMostafa30/templet",
-    demo: "https://walidmostafa30.github.io/templet/",
   },
 ];

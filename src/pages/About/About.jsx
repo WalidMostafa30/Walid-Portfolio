@@ -1,5 +1,5 @@
 import GlobalTitle from "../../components/GlobalTitle/GlobalTitle";
-import CV from "../../assets/CV/Walid-CV.pdf";
+import CV from "../../assets/CV/Walid-Mostafa-CV.pdf";
 import labtop from "../../assets/Images/labtop.webp";
 import hand from "../../assets/Images/HandCoding.webp";
 import { aboutInfo } from "../../assets/data/Data";
