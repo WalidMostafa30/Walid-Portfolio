@@ -2,12 +2,15 @@ import myPortfolioImg from "../Images/projectsImgs/portfolio.webp";
 import MiniStoreImg from "../Images/projectsImgs/ecom.webp";
 import GuessGameImg from "../Images/projectsImgs/guess-game.webp";
 import QuranImg from "../Images/projectsImgs/quran-app.webp";
-import todoListimg from "../Images/projectsImgs/todo-list-pages.webp";
+import todoListimg from "../Images/projectsImgs/todo-list.webp";
 import weatherimg from "../Images/projectsImgs/weather-app.webp";
 import quizimg from "../Images/projectsImgs/quiz-app.webp";
 import DragTodoImg from "../Images/projectsImgs/drag-drop-todo.webp";
 import ageCalculatorImg from "../Images/projectsImgs/age-calculator.webp";
 import ticTacToeImg from "../Images/projectsImgs/tic-tac-toe.webp";
+import calculatorImg from "../Images/projectsImgs/calculator.webp";
+import memoryGameImg from "../Images/projectsImgs/memoryGame.webp";
+
 import {
   faDesktop,
   faHeadset,
@@ -150,8 +153,8 @@ export const ProjectsData = [
   {
     title: "Todo List",
     img: todoListimg,
-    github: "https://github.com/WalidMostafa30/Todo-list-TS-",
-    demo: "https://todo-list-ts2001.netlify.app/",
+    github: "https://github.com/WalidMostafa30/Todo-List",
+    demo: "https://todo-list-2o01.netlify.app/",
   },
   {
     title: "Weather App",
@@ -188,5 +191,17 @@ export const ProjectsData = [
     img: ageCalculatorImg,
     github: "https://github.com/WalidMostafa30/Age-calculation",
     demo: "https://walidmostafa30.github.io/Age-calculation/",
+  },
+  {
+    title: "Calculator",
+    img: calculatorImg,
+    github: "https://github.com/WalidMostafa30/Calculator",
+    demo: "https://walidmostafa30.github.io/Calculator/",
+  },
+  {
+    title: "Memory Game",
+    img: memoryGameImg,
+    github: "https://github.com/WalidMostafa30/Memory-game",
+    demo: "https://walidmostafa30.github.io/Memory-game/",
   },
 ];
