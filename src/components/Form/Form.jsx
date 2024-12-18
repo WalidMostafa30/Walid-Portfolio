@@ -72,7 +72,7 @@ const Form = () => {
         isLoading ? "disabled" : ""
       }`}
     >
-      <h1>Message me</h1>
+      <h1 className="mb-1">Message me</h1>
       <div className="Contact__form-input main-bg d-flex flex-column p-2 rounded-3">
         <label htmlFor="Name">Name</label>
         <input

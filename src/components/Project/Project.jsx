@@ -1,28 +1,34 @@
 /* eslint-disable react/prop-types */
-import ArrowRightIcon from "../../assets/icons/ArrowRightIcon";
 import CodeIcon from "../../assets/icons/CodeIcon";
 import EyeIcon from "../../assets/icons/EyeIcon";
 import "./Project.css";
 
 const Project = ({ pro }) => {
   return (
-    <div className="Project main-bg rounded-3">
+    <div className="main-bg rounded-4">
       <div
-        className="Project__img rounded-2"
-        style={{ backgroundImage: `url(${pro.img})` }}
-      />
+        className="rounded-4 overflow-hidden"
+        style={{ height: "200px" }}
+      >
+        <img
+          src={pro.img}
+          alt={pro.title}
+          loading="lazy"
+          className="w-100 h-100 object-fit-cover"
+        />
+      </div>
 
-      <div className="Project__details p-2">
-        <h3 className="Project__title">{pro.title}</h3>
+      <div className="p-2">
+        <h3 className="text-white text-center my-1">{pro.title}</h3>
 
-        <div className="Project__btns">
+        <div className="d-flex align-items-center justify-content-between">
           {pro.github && (
-            <a target="_blank" href={pro.github}>
+            <a className="project__btn d-flex align-items-center gap-1 p-2 text-white fs-5" target="_blank" href={pro.github}>
               GitHub <CodeIcon />
             </a>
           )}
 
-          <a target="_blank" href={pro.demo}>
+          <a className="project__btn d-flex align-items-center gap-1 p-2 text-white fs-5" target="_blank" href={pro.demo}>
             Demo <EyeIcon />
           </a>
         </div>

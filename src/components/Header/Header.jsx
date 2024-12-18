@@ -4,8 +4,8 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="container d-flex align-items-center justify-content-between py-1">
-      <h1 className="name">
-        Walid <span>🖐</span>
+      <h1 className="d-flex align-items-center gap-1">
+        Walid <span className="header__hand">🖐</span>
       </h1>
 
       <DarkMode />

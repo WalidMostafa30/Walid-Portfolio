@@ -1,4 +1,3 @@
-import "./Skills.css";
 import GlobalTitle from "../../components/GlobalTitle/GlobalTitle";
 import { skillsData } from "../../assets/data/Data";
 import { motion } from "framer-motion";
@@ -30,20 +29,24 @@ const Skills = () => {
     },
   };
   return (
-    <section className="Skills container">
+    <section className="container">
       <GlobalTitle title={"My Skills"} description={"My Technical Level"} />
 
       <motion.div
         variants={pVariants}
         initial="hidden"
         animate="visible"
-        className="Skills__container main-bg"
+        className="rounded-3 d-flex flex-wrap p-3 gap-2 main-bg"
       >
         {skillsData.map((skill, index) => {
           return (
             <motion.div
               variants={cVariants}
-              className="Skills__skill"
+              className="flex-grow-1 p-3 rounded-2 text-center"
+              style={{
+                backgroundColor: "var(--main-bg-color)",
+                minWidth: "calc(100% / 4)",
+              }}
               key={index}
             >
               <h4>{skill}</h4>

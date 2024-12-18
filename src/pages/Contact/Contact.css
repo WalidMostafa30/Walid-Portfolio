@@ -1,16 +1,9 @@
 .GlobalCard {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 5px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
   transition: 0.3s;
 
   &,
   path,
-  h3,
+  h2,
   p {
     color: white;
   }

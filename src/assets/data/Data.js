@@ -53,6 +53,16 @@ export const contactInfo = [
     info: "Walid Mostafa",
     link: "https://www.linkedin.com/in/walid-m0stafa-",
   },
+  {
+    head: "Facebook",
+    info: "Walid Mostafa",
+    link: "https://www.facebook.com/profile.php?id=100011538554307&mibextid=ZbWKwL",
+  },
+  {
+    head: "Instagram",
+    info: "walid_mostafa30",
+    link: "https://www.instagram.com/walid_mostafa30/profilecard/?igsh=MWNnNmZucDE4bjc1MA==",
+  },
 ];
 
 export const skillsData = [

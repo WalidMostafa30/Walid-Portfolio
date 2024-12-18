@@ -20,7 +20,7 @@ const DarkMode = () => {
   }, [darkMode]);
 
   return (
-    <div className="fs-3" style={{cursor:"pointer"}} onClick={handleDark}>
+    <div className="fs-2" style={{cursor:"pointer"}} onClick={handleDark}>
       {!darkMode ? <MoonIcon /> : <SunIcon />}
     </div>
   );

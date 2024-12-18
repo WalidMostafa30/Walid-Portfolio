@@ -1,39 +1,23 @@
 .NavBar {
-  padding: 10px;
   background-color: var(--main-bg-color);
-  z-index: 100;
-  margin-top: 10px;
 
   .NavBar__links {
-    border-radius: 50px;
-    border: none;
-    align-items: center;
     width: 500px;
-    margin: auto;
-    position: relative;
-    padding: 5px;
-
     @media (max-width: 768px) {
       width: 100%;
     }
   }
 
   .NavBar__link {
-    color: white;
-    flex-grow: 1;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 18px;
-    position: relative;
 
     svg {
       font-size: 30px;
       transition: 0.5s;
-      z-index: 1;
     }
 
     p {
       position: absolute;
+      font-size: 18px;
       bottom: -13px;
       left: 50%;
       transform: translateX(-50%);
@@ -47,7 +31,7 @@
       }
 
       p {
-        bottom: 0px;
+        bottom: -3px;
         opacity: 1;
       }
     }
@@ -55,7 +39,7 @@
 
   .nav-circle {
     position: absolute;
-    top: -50%;
+    top: -60%;
     width: 60px;
     height: 60px;
     background: var(--main-linear);
@@ -67,7 +51,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 50%;
+      top: 55%;
       left: -15px;
       width: 15px;
       height: 20px;
@@ -79,7 +63,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: 50%;
+      top: 55%;
       right: -15px;
       width: 15px;
       height: 20px;

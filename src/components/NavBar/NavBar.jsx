@@ -16,6 +16,7 @@ const NavBar = () => {
     { name: "Contact", link: "/contact", icon: <PaperPlaneIcon /> },
   ];
 
+  // circle nav code ....
   const [circlePosition, setCirclePosition] = useState(0);
   const navContainerRef = useRef(null);
   const location = useLocation();
@@ -34,10 +35,10 @@ const NavBar = () => {
   }, [location]);
 
   return (
-    <div className="NavBar">
-      <div className="NavBar__links d-flex main-bg" ref={navContainerRef}>
+    <div className="NavBar z-3 mt-2 p-2 pt-3">
+      <div className="NavBar__links d-flex align-items-center rounded-5 m-auto p-1 position-relative main-bg" ref={navContainerRef}>
         {navLinks.map((item) => (
-          <NavLink key={item.name} className="NavBar__link" to={item.link}>
+          <NavLink key={item.name} className="NavBar__link text-white flex-grow-1 text-center py-2 position-relative" to={item.link}>
             <span>{item.icon}</span>
             <p>{item.name}</p>
           </NavLink>

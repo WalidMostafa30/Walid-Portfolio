@@ -1,48 +1,14 @@
-.Project {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-
-  .Project__img {
-    background: center center/cover no-repeat;
-    height: 250px;
-    width: 100%;
-    border-bottom: var(--border-blur);
-  }
-
-  .Project__title {
+.project__btn {
+  svg,
+  path {
+    transition: 0.3s;
     color: white;
-    text-align: center;
-    margin-block: 5px;
   }
 
-  .Project__btns {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      padding: 10px;
-      color: white;
-      font-size: 20px;
-
-      svg,
-      path {
-        transition: 0.3s;
-        color: white;
-        margin-top: 5px;
-      }
-
-      &:hover {
-        svg,
-        path {
-          transform: translateX(5px);
-        }
-      }
+  &:hover {
+    svg,
+    path {
+      transform: translateX(5px);
     }
   }
 }

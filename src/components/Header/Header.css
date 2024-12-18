@@ -1,12 +1,6 @@
-.name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-
-  span {
-    animation: hand-animation 3s linear infinite 1s;
-  }
+.header__hand {
+  animation: hand-animation 3s linear infinite 1s;
+  font-size: 30px;
 }
 
 @keyframes hand-animation {

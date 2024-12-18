@@ -6,6 +6,8 @@ import "./Contact.css";
 import EmailIcon from "../../assets/icons/EmailIcon";
 import WhatsAppIcon from "../../assets/icons/WhatsAppIcon";
 import LinkedInIcon from "../../assets/icons/LinkedInIcon";
+import FaceBookIcon from "../../assets/icons/FaceBookIcon";
+import InstaIcon from "../../assets/icons/InstaIcon";
 
 const Contact = () => {
   const contactsV = {
@@ -31,7 +33,7 @@ const Contact = () => {
     <section className="Contact">
       <GlobalTitle title={"Contact Me"} description={"Get In Touch"} />
 
-      <div className="Contact__container container d-flex flex-column flex-xl-row justify-content-between gap-5">
+      <div className="Contact__container container d-flex flex-column flex-xl-row justify-content-between gap-3">
         <motion.div
           variants={contactsV}
           initial="hidden"
@@ -46,16 +48,23 @@ const Contact = () => {
                 className="Contact__Card"
               >
                 <a href={contact.link} target="_blank">
-                  <div className="GlobalCard main-bg">
+                  <div className="GlobalCard main-bg d-flex align-items-center gap-2 rounded-2 p-2">
                     {contact.head === "E-mail" ? (
                       <EmailIcon />
                     ) : contact.head === "Whatsapp" ? (
                       <WhatsAppIcon />
-                    ) : (
+                    ) : contact.head === "LinkedIn" ? (
                       <LinkedInIcon />
+                    ) : contact.head === "Facebook" ? (
+                      <FaceBookIcon />
+                    ) : (
+                      <InstaIcon />
                     )}
-                    <h2>{contact.head}</h2>
-                    <p>{contact.info}</p>
+
+                    <div>
+                      <h3>{contact.head}</h3>
+                      <p className="fs-5">{contact.info}</p>
+                    </div>
                   </div>
                 </a>
               </motion.div>

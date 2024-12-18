@@ -1,69 +1,67 @@
-.Home {
-  .Home__info {
-    h1 {
-      font-size: 50px;
-      font-weight: bold;
+.Home__info {
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
 
-      @media (max-width: 1200px) {
-        font-size: 40px;
-      }
-    }
-
-    h4 {
-      font-size: 30px;
-      font-weight: 400;
-      position: relative;
-
-      span {
-        position: absolute;
-        left: -70px;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 2px;
-        width: 60px;
-        background-color: var(--main-text-color);
-      }
-
-      @media (max-width: 1200px) {
-        font-size: 22px;
-
-        span {
-          left: -50px;
-          width: 40px;
-        }
-      }
+    @media (max-width: 1200px) {
+      font-size: 40px;
     }
   }
 
-  .Home__profile {
-    .Home__profile-img {
-      position: relative;
-      background: url(../../assets/Images/profile-img.webp) center center/cover
-        no-repeat;
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
+  h4 {
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
 
-      @media (max-width: 1200px) {
-        width: 250px;
-        height: 250px;
+    span {
+      position: absolute;
+      left: -70px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      width: 60px;
+      background-color: var(--main-text-color);
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+
+      span {
+        left: -50px;
+        width: 40px;
       }
     }
+  }
+}
 
-    .Home__profile-img-border {
-      background: var(--main-linear);
-      position: absolute;
-      width: calc(100%);
-      height: calc(100%);
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-      border-radius: 53% 50% 40% 70% / 53% 51% 60% 42%;
-      animation: border-animation 10s linear infinite 1s;
-      filter: blur(20px);
+.Home__profile {
+  .Home__profile-img {
+    position: relative;
+    background: url(../../assets/Images/profile-img.webp) center center/cover
+      no-repeat;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+
+    @media (max-width: 1200px) {
+      width: 250px;
+      height: 250px;
     }
+  }
+
+  .Home__profile-img-border {
+    background: var(--main-linear);
+    position: absolute;
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 53% 50% 40% 70% / 53% 51% 60% 42%;
+    animation: border-animation 10s linear infinite 1s;
+    filter: blur(20px);
   }
 }
 
