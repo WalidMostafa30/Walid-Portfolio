@@ -1,19 +1,27 @@
-.Contact__form-input {
-  label {
-    color: white;
+.Contact__form {
+  &.disabled {
+    pointer-events: none;
   }
 
-  textarea {
-    min-height: 150px;
-    max-height: 320px;
-  }
+  .Contact__form-input {
+    label {
+      color: white;
+      font-weight: 500;
+      font-size: 18px;
+    }
 
-  input,
-  textarea {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    color: white;
+    textarea {
+      min-height: 150px;
+      max-height: 150px;
+    }
+
+    input,
+    textarea {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      color: white;
+    }
   }
 }

@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import "./Home.css";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PaperPlaneIcon from "../../assets/icons/PaperPlaneIcon";
+import MainBtn from "../../components/MainBtn/MainBtn";
+import ProjectsIcon from "../../assets/icons/ProjectsIcon";
 
 const Home = () => {
   const nameText = "Walid Mostafa";
@@ -125,10 +126,21 @@ const Home = () => {
           ></motion.span>
           FrontEnd Developer
         </h4>
+        <div className="d-flex gap-2 mt-2">
+          <Link to={"/contact"}>
+            <MainBtn active={true}>
+              Say Hello
+              <PaperPlaneIcon />
+            </MainBtn>
+          </Link>
 
-        <Link to={"/contact"} className="main-btn my-2">
-          Say Hello <FontAwesomeIcon icon={faPaperPlane} />
-        </Link>
+          <Link to={"/projects"}>
+            <MainBtn>
+              My Projects
+              <ProjectsIcon />
+            </MainBtn>
+          </Link>
+        </div>
 
         <SocialMedia />
       </motion.div>

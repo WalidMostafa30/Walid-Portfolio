@@ -1,9 +1,11 @@
 import GlobalTitle from "../../components/GlobalTitle/GlobalTitle";
-import GlobalCard from "../../components/GlobalCard/GlobalCard";
 import Form from "../../components/Form/Form";
 import { motion } from "framer-motion";
 import { contactInfo } from "../../assets/data/Data";
 import "./Contact.css";
+import EmailIcon from "../../assets/icons/EmailIcon";
+import WhatsAppIcon from "../../assets/icons/WhatsAppIcon";
+import LinkedInIcon from "../../assets/icons/LinkedInIcon";
 
 const Contact = () => {
   const contactsV = {
@@ -34,7 +36,7 @@ const Contact = () => {
           variants={contactsV}
           initial="hidden"
           animate="visible"
-          className="Contact__talkToMe col-xl-4 d-flex flex-column gap-3"
+          className="Contact__talkToMe col-xl-4 d-flex flex-column gap-2"
         >
           {contactInfo.map((contact, index) => {
             return (
@@ -44,11 +46,17 @@ const Contact = () => {
                 className="Contact__Card"
               >
                 <a href={contact.link} target="_blank">
-                  <GlobalCard
-                    head={contact.head}
-                    icon={contact.icon}
-                    info={contact.info}
-                  />
+                  <div className="GlobalCard main-bg">
+                    {contact.head === "E-mail" ? (
+                      <EmailIcon />
+                    ) : contact.head === "Whatsapp" ? (
+                      <WhatsAppIcon />
+                    ) : (
+                      <LinkedInIcon />
+                    )}
+                    <h2>{contact.head}</h2>
+                    <p>{contact.info}</p>
+                  </div>
                 </a>
               </motion.div>
             );

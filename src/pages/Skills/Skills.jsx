@@ -12,7 +12,7 @@ const Skills = () => {
       transition: {
         delay: 0.4,
         duration: 1,
-        staggerChildren: 0.15,
+        staggerChildren: 0.1,
         delayChildren: 0.5,
       },
     },
@@ -20,11 +20,11 @@ const Skills = () => {
 
   const cVariants = {
     hidden: {
-      scale: 0,
+      y: 50,
       opacity: 0,
     },
     visible: {
-      scale: 1,
+      y: 0,
       opacity: 1,
       transition: { duration: 0.3, type: "spring", stiffness: 100 },
     },

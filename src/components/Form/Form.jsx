@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import "./Form.css";
 import Swal from "sweetalert2";
+import MainBtn from "../MainBtn/MainBtn";
+import PaperPlaneIcon from "../../assets/icons/PaperPlaneIcon";
 
 const Form = () => {
   const form = useRef();
@@ -68,7 +68,9 @@ const Form = () => {
       initial="hidden"
       animate="visible"
       onSubmit={submitHandler}
-      className="Contact__form col-xl-7 d-flex flex-column gap-3"
+      className={`Contact__form col-xl-7 d-flex flex-column gap-2 ${
+        isLoading ? "disabled" : ""
+      }`}
     >
       <h1>Message me</h1>
       <div className="Contact__form-input main-bg d-flex flex-column p-2 rounded-3">
@@ -98,14 +100,20 @@ const Form = () => {
         <textarea ref={msgInput} required id="Message" name="message" />
       </div>
 
-      <button
-        className="main-btn"
+      <MainBtn
+        className=" border-0 bg-transparent "
         disabled={isLoading}
         style={{ pointerEvents: isLoading && "none" }}
       >
-        {isLoading ? "Sending..." : "Send Message"}{" "}
-        {!isLoading && <FontAwesomeIcon icon={faPaperPlane} />}
-      </button>
+        {isLoading ? "Sending  " : "Send Message"}
+        {isLoading ? (
+          <div className="spinner-border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        ) : (
+          <PaperPlaneIcon />
+        )}
+      </MainBtn>
     </motion.form>
   );
 };

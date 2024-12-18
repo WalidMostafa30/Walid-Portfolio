@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import "./DarkMode.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import MoonIcon from "../../assets/icons/MoonIcon";
+import SunIcon from "../../assets/icons/SunIcon";
 
 const DarkMode = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -21,8 +20,8 @@ const DarkMode = () => {
   }, [darkMode]);
 
   return (
-    <div className="Nav-icon" onClick={handleDark}>
-      <FontAwesomeIcon icon={!darkMode ? faMoon : faSun} />
+    <div className="fs-3" style={{cursor:"pointer"}} onClick={handleDark}>
+      {!darkMode ? <MoonIcon /> : <SunIcon />}
     </div>
   );
 };

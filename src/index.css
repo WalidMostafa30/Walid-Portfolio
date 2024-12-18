@@ -2,33 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--main-text-color);
 }
 
 :root {
-  --main-color: #334464;
   --main-bg-color: #11111f;
   --main-text-color: white;
+  --main-btn-color: #3095fd;
   --main-linear: linear-gradient(45deg, #2839ff, #39f8fa);
-  --bg-blur: rgba(255, 255, 255, 0.1);
-  --border-blur: 2px solid rgba(225, 225, 225, 0.2);
+  --bg-blur: rgba(255, 255, 255, 0.232);
   --main-blur: blur(30px);
 }
 
 .light {
   --main-bg-color: #fafafa;
   --main-text-color: black;
-  --bg-blur: #3344649d;
-  --border-blur: 2px solid #3344648a;
+  --bg-blur: #334464b3;
 }
 
 body {
   font-family: system-ui;
   background-color: var(--main-bg-color);
-}
-
-html {
-  scroll-behavior: smooth;
+  color: var(--main-text-color);
 }
 
 ::-webkit-scrollbar {
@@ -42,67 +36,19 @@ h4,
 h5,
 h6,
 p,
-ul,
-li,
-a,
-i {
+a {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
 }
 
-.main-btn {
-  background: var(--main-linear);
-  color: white;
-  border: none;
-  padding: 20px 30px;
-  font-size: 28px;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: 0.3s;
-  width: fit-content;
-
-  path,
-  svg {
-    color: white;
-    margin-left: 10px;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  @media (max-width: 768px) {
-    padding: 15px 20px;
-    font-size: 22px;
-  }
-}
-
 section {
-  padding: 80px 0;
-  height: 100dvh;
-  overflow-y: auto;
-
-  @media (max-width: 768px) {
-    padding: 50px 0;
-  }
-}
-
-.Nav-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 28px;
+  height: 100%;
 }
 
 .main-bg {
   background: var(--bg-blur);
-  border: var(--border-blur);
   backdrop-filter: var(--main-blur);
 }
 

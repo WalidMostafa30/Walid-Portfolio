@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
+import ArrowRightIcon from "../../assets/icons/ArrowRightIcon";
+import CodeIcon from "../../assets/icons/CodeIcon";
+import EyeIcon from "../../assets/icons/EyeIcon";
 import "./Project.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Project = ({ pro }) => {
   return (
     <div className="Project main-bg rounded-3">
       <div
-        className="Project__img rounded-2 overflow-hidden"
+        className="Project__img rounded-2"
         style={{ backgroundImage: `url(${pro.img})` }}
       />
 
@@ -15,13 +16,14 @@ const Project = ({ pro }) => {
         <h3 className="Project__title">{pro.title}</h3>
 
         <div className="Project__btns">
-          <a target="_blank" href={pro.github}>
-            GitHub
-            <FontAwesomeIcon icon={faArrowRight} />
-          </a>
+          {pro.github && (
+            <a target="_blank" href={pro.github}>
+              GitHub <CodeIcon />
+            </a>
+          )}
+
           <a target="_blank" href={pro.demo}>
-            Demo
-            <FontAwesomeIcon icon={faArrowRight} />
+            Demo <EyeIcon />
           </a>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Skills from "../pages/Skills/Skills";
-import Services from "../pages/Services/Services";
 import Projects from "../pages/Projects/Projects";
 import Contact from "../pages/Contact/Contact";
 import Transition from "../components/Transition/Transition";
@@ -35,14 +34,6 @@ const AppRouter = () => {
           element={
             <Transition>
               <Skills />
-            </Transition>
-          }
-        />
-        <Route
-          path="/services"
-          element={
-            <Transition>
-              <Services />
             </Transition>
           }
         />

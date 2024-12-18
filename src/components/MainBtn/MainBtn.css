@@ -1,0 +1,33 @@
+.MainBtn {
+  background-color: var(--main-btn-color);
+  color: white;
+  border: 3px solid var(--main-btn-color);
+  padding: 15px 20px;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: fit-content;
+  transition: 0.3s;
+
+  path,
+  svg {
+    color: white;
+    margin-left: 10px;
+    transition: 0.3s;
+  }
+
+  &:hover,
+  &.active {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    path {
+      color: var(--main-text-color);
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+      padding: 10px 15px;
+  }
+}

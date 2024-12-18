@@ -1,18 +1,16 @@
 import GlobalTitle from "../../components/GlobalTitle/GlobalTitle";
-import { ProjectsData } from "../../assets/data/Data";
 import Project from "../../components/Project/Project";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, EffectCoverflow } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { ProjectsData } from "../../assets/data/Data";
 import { motion } from "framer-motion";
 import "./Projects.css";
 
 const Projects = () => {
   const projectsV = {
-    hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.2, delayChildren: 0.5 },
-    },
-  };
-
-  const childProjectsV = {
     hidden: {
       y: 50,
       opacity: 0,
@@ -20,7 +18,7 @@ const Projects = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 1.2, type: "spring", stiffness: 100 },
+      transition: { delay: 0.5, duration: 1 },
     },
   };
 
@@ -32,15 +30,32 @@ const Projects = () => {
         variants={projectsV}
         initial="hidden"
         animate="visible"
-        className="Projects__container row m-auto row-cols-lg-2 row-cols-xl-3 g-3"
+        className="Services__container container"
       >
-        {ProjectsData.map((pro, index) => {
-          return (
-            <motion.div variants={childProjectsV} key={index}>
-              <Project pro={pro} />
-            </motion.div>
-          );
-        })}
+        <Swiper
+          className="Swiper"
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          pagination={{ clickable: true, dynamicBullets: true }}
+          modules={[EffectCoverflow, Pagination]}
+        >
+          {ProjectsData.map((pro, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <Project pro={pro} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </motion.div>
     </section>
   );

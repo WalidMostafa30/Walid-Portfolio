@@ -1,10 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FaceBookIcon from "../../assets/icons/FaceBookIcon";
+import GitHubIcon from "../../assets/icons/GitHubIcon";
+import LinkedInIcon from "../../assets/icons/LinkedInIcon";
 import "./SocialMedia.css";
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 
 const SocialMedia = () => {
   return (
@@ -13,13 +10,13 @@ const SocialMedia = () => {
         target="_blank"
         href="https://www.facebook.com/profile.php?id=100011538554307&mibextid=ZbWKwL"
       >
-        <FontAwesomeIcon icon={faFacebook} />
+        <FaceBookIcon />
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/walid-m0stafa-">
-        <FontAwesomeIcon icon={faLinkedin} />
+        <LinkedInIcon />
       </a>
       <a target="_blank" href="https://github.com/WalidMostafa30">
-        <FontAwesomeIcon icon={faGithub} />
+        <GitHubIcon />
       </a>
     </div>
   );

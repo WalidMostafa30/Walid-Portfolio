@@ -11,29 +11,7 @@ import ticTacToeImg from "../Images/projectsImgs/tic-tac-toe.webp";
 import calculatorImg from "../Images/projectsImgs/calculator.webp";
 import memoryGameImg from "../Images/projectsImgs/memoryGame.webp";
 
-import {
-  faDesktop,
-  faHeadset,
-  faMobileScreen,
-  faWandMagicSparkles,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faEnvelope,
-  faLightbulb,
-  faObjectGroup,
-} from "@fortawesome/free-regular-svg-icons";
-import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
 // *************************************************
-
-export const navLinks = [
-  { name: "Home", link: "/" },
-  { name: "About", link: "/about" },
-  { name: "Skills", link: "/skills" },
-  { name: "Services", link: "/services" },
-  { name: "Projects", link: "/projects" },
-  { name: "Contact", link: "/contact" },
-];
 
 export const aboutInfo = [
   {
@@ -59,55 +37,19 @@ export const aboutInfo = [
   },
 ];
 
-export const services = [
-  {
-    head: "Web Development",
-    icon: faDesktop,
-    info: "I can build a website by using HTML, CSS, JavaScript and REACT",
-  },
-  {
-    head: "Responsive Design",
-    icon: faMobileScreen,
-    info: "your website well be responsive for all devices: Tablets ans Smart phones",
-  },
-  {
-    head: "Creative Design",
-    icon: faObjectGroup,
-    info: "i can edit your current website by adding a new content to make it much better",
-  },
-  {
-    head: "Web ideas",
-    icon: faLightbulb,
-    info: "i could turn your ideas into a real projects with high quality",
-  },
-  {
-    head: "Retouch",
-    icon: faWandMagicSparkles,
-    info: "I can help you by redesign your current website to looks much better",
-  },
-  {
-    head: "Support",
-    icon: faHeadset,
-    info: "Support is available if you wanna make any changes for your website after delivering it",
-  },
-];
-
 export const contactInfo = [
   {
     head: "E-mail",
-    icon: faEnvelope,
     info: "walidmoustafa436@gmail.com",
     link: "https://walidmoustafa436@gmail.com",
   },
   {
     head: "Whatsapp",
-    icon: faWhatsapp,
     info: "0106 525 4159",
     link: "https://wa.me/201065254159",
   },
   {
     head: "LinkedIn",
-    icon: faLinkedin,
     info: "Walid Mostafa",
     link: "https://www.linkedin.com/in/walid-m0stafa-",
   },
@@ -139,7 +81,7 @@ export const ProjectsData = [
     demo: "https://walid-portfolio-2001.netlify.app/",
   },
   {
-    title: "Mini Store",
+    title: "E-commerce",
     img: MiniStoreImg,
     github: "https://github.com/WalidMostafa30/E-commerce-jsonserver",
     demo: "https://ecommerce-ministore.netlify.app/",

@@ -1,11 +1,8 @@
-import "./MainBtn.css"
+/* eslint-disable react/prop-types */
+import "./MainBtn.css";
 
-const MainBtn = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const MainBtn = ({ children, active }) => {
+  return <button className={`MainBtn ${active ? "active" : ""}`}>{children}</button>;
+};
 
-export default MainBtn
+export default MainBtn;

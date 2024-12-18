@@ -4,9 +4,9 @@ import labtop from "../../assets/Images/labtop.webp";
 import hand from "../../assets/Images/HandCoding.webp";
 import { aboutInfo } from "../../assets/data/Data";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import "./About.css";
+import FileIcon from "../../assets/icons/FileIcon";
+import MainBtn from "../../components/MainBtn/MainBtn";
 
 const About = () => {
   const aboutImgV = {
@@ -88,16 +88,20 @@ const About = () => {
             </motion.tbody>
           </table>
 
-          <motion.div
+          <motion.a
             variants={btnV}
             initial="hidden"
             animate="visible"
-            className="d-flex"
+            download=""
+            href={CV}
+            className="mt-2"
+            style={{ width: "fit-content" }}
           >
-            <a download="" href={CV} className="main-btn mt-2">
-              Downloud CV <FontAwesomeIcon icon={faFileInvoice} />
-            </a>
-          </motion.div>
+            <MainBtn>
+              Downloud CV
+              <FileIcon />
+            </MainBtn>
+          </motion.a>
         </div>
       </div>
     </section>

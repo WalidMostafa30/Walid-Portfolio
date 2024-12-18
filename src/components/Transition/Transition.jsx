@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import "./Transition.css";
 import { motion } from "framer-motion";
 
 const Transition = ({ children }) => {
@@ -24,7 +23,7 @@ const Transition = ({ children }) => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="w-100"
+      className="h-100 overflow-y-auto"
     >
       {children}
     </motion.div>

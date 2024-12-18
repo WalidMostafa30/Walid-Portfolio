@@ -1,54 +1,91 @@
 .NavBar {
-  width: 100%;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  .NavBar__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  padding: 10px;
+  background-color: var(--main-bg-color);
+  z-index: 100;
+  margin-top: 10px;
 
   .NavBar__links {
-    border-radius: 10px;
+    border-radius: 50px;
+    border: none;
     align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    padding: 5px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .NavBar__link {
     color: white;
-    padding: 10px 15px;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 0;
     font-size: 18px;
-    transition: 0.3s;
-    border-inline: 2px solid transparent;
+    position: relative;
 
-    &:hover,
+    svg {
+      font-size: 30px;
+      transition: 0.5s;
+      z-index: 1;
+    }
+
+    p {
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: 0.5s ease-in-out;
+    }
+
     &.active {
-      border-inline: inherit;
-      background-color: var(--bg-blur);
-    }
+      svg {
+        transform: translateY(-30px);
+      }
 
-    &:last-of-type {
-      border: none;
-      border-inline-start: 2px solid transparent;
-      
-      &:hover,
-      &.active {
-        border-inline-start: inherit;
+      p {
+        bottom: 0px;
+        opacity: 1;
       }
     }
+  }
 
-    &:first-of-type {
-      border: none;
-      border-inline-end: 2px solid transparent;
-      
-      &:hover,
-      &.active {
-        border-inline-end: inherit;
-      }
+  .nav-circle {
+    position: absolute;
+    top: -50%;
+    width: 60px;
+    height: 60px;
+    background: var(--main-linear);
+    border: 5px solid var(--main-bg-color);
+    border-radius: 50%;
+    z-index: -1;
+    transition: left 0.5s ease;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -15px;
+      width: 15px;
+      height: 20px;
+      background-color: transparent;
+      border-top-right-radius: 20px;
+      box-shadow: 0px -10px 0 0 var(--main-bg-color);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: -15px;
+      width: 15px;
+      height: 20px;
+      background-color: transparent;
+      border-top-left-radius: 20px;
+      box-shadow: 0px -10px 0 0 var(--main-bg-color);
     }
   }
 }
