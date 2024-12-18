@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
-import "./Home.css";
 import PaperPlaneIcon from "../../assets/icons/PaperPlaneIcon";
 import MainBtn from "../../components/MainBtn/MainBtn";
 import ProjectsIcon from "../../assets/icons/ProjectsIcon";
+import ProfileImg from "../../assets/Images/profile-img.webp";
+import "./Home.css";
 
 const Home = () => {
   const nameText = "Walid Mostafa";
@@ -36,21 +37,19 @@ const Home = () => {
   const nameV = {
     hidden: {},
     visible: {
-      transition: { staggerChildren: 0.1, delayChildren: 0.6 },
+      transition: { staggerChildren: 0.1, delayChildren: 0.3 },
     },
   };
 
   const childNameV = {
     hidden: {
       y: -100,
-      x: -100,
       opacity: 0,
     },
     visible: {
       y: 0,
-      x: 0,
       opacity: 1,
-      transition: { duration: 0.4, type: "spring", stiffness: 100 },
+      transition: { duration: 0.1, type: "spring", stiffness: 100 },
     },
   };
 
@@ -64,7 +63,7 @@ const Home = () => {
       rotate: "0deg",
       x: 0,
       opacity: 1,
-      transition: { delay: 2, duration: 0.2, type: "spring", stiffness: 100 },
+      transition: { delay: 1.8, duration: 0.2, type: "spring", stiffness: 100 },
     },
   };
 
@@ -76,7 +75,7 @@ const Home = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { delay: 2, duration: 0.2, type: "spring", stiffness: 100 },
+      transition: { delay: 1.8, duration: 0.2, type: "spring", stiffness: 100 },
     },
   };
 
@@ -152,6 +151,12 @@ const Home = () => {
         className="Home__profile"
       >
         <div className="Home__profile-img">
+          <img
+            src={ProfileImg}
+            alt="profile-img"
+            loading="lazy"
+            className="w-100 h-100 object-fit-cover rounded-circle"
+          />
           <div className="Home__profile-img-border" />
         </div>
       </motion.div>

@@ -53,10 +53,10 @@ const About = () => {
   };
 
   return (
-    <section className="About">
+    <section>
       <GlobalTitle title={"About Me"} description={"My Introduction"} />
 
-      <div className="About__container container d-flex justify-content-between">
+      <div className="container d-flex justify-content-between">
         <motion.div
           variants={aboutImgV}
           initial="hidden"
